@@ -12,11 +12,12 @@ namespace task_DEV_3
     {
         static void Main(string[] args)
         {
-            Boolean check = validationcheck(args);
+            int decimalnumber = Convert.ToInt32(args[0]);
+            int system = Convert.ToInt32(args[1]);
+            ArgumentsCheck test = new ArgumentsCheck(decimalnumber,system);
+            Boolean check = test.validationcheck();
             if (true == check)
-            {
-                int decimalnumber = Convert.ToInt32(args[0]);
-                int system = Convert.ToInt32(args[1]);
+            { 
                 NewNumberSystem number = new NewNumberSystem(decimalnumber, system);
                 string answer = number.calculatenewsystem();
                 answer = number.ReverseAnswer(answer);
@@ -28,30 +29,6 @@ namespace task_DEV_3
                 Console.WriteLine("check the correctness of the input");
                 Console.ReadLine();
             }
-        }
-        /// <summary> 
-        /// We check the arguments for the correctness of the input
-        /// </summary>
-        /// <returns>Is it allowed to continue the program</returns>
-        public static Boolean validationcheck(string[] args)
-        {
-            if ((null == args[0]) || (null == args[1]))
-            {
-                Console.WriteLine("no transfer parameters");
-                return false;
-            }
-            if ((Convert.ToInt32(args[1]) < 1) || (Convert.ToInt32(args[1]) > 20))
-            {
-                Console.WriteLine("you have entered the wrong basis of the new system");
-                return false;
-            }
-            int numberForCheck;
-            if (!Int32.TryParse(args[0], out numberForCheck) || !Int32.TryParse(args[1], out numberForCheck))
-            {
-                Console.WriteLine("Not only numbers are introduced");
-                return false;
-            }
-            return true;
         }
     }
 }
