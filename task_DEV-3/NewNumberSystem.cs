@@ -8,7 +8,6 @@ namespace task_DEV_3
     {
         private int number;
         private int numbersystem;
-
         public NewNumberSysteminterpreter(int decimalnumber,int system)
         {
             this.number = decimalnumber;
@@ -31,7 +30,6 @@ namespace task_DEV_3
                 answer.Append(elements[remainderofthedivision]);
             }
             while (number > 0);
-
             return answer.ToString();
         }
         /// <summary> 
