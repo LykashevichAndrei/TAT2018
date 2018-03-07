@@ -1,7 +1,6 @@
 ﻿using System;
 namespace task_DEV_3
-{
-    /// <summary> 
+{   /// <summary> 
     /// EntryPoint
     /// enter two arguments: 
     /// 1) the number that we must translate into another system

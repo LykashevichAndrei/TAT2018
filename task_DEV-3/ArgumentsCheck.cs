@@ -36,7 +36,7 @@ namespace task_DEV_3
                 return false;
             }    
             
-                if ((Convert.ToInt32(thebasisofanewnumbersystem) < 1) || (Convert.ToInt32(thebasisofanewnumbersystem) > 20))
+                if ((Convert.ToInt32(thebasisofanewnumbersystem) < 2) || (Convert.ToInt32(thebasisofanewnumbersystem) > 20))
             {
                 Console.WriteLine("you have entered the wrong basis of the new system");
                 return false;
