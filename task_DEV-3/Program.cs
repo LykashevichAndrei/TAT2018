@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace task_DEV_3
 {
     /// <summary> 
@@ -13,13 +12,13 @@ namespace task_DEV_3
         static void Main(string[] args)
         {
             ArgumentsCheck test = new ArgumentsCheck(args);
-            Boolean check = test.validationcheck();
+            Boolean check = test.validate();
             
             if (true == check)
             {
                 int decimalnumber = Convert.ToInt32(args[0]);
                 int system = Convert.ToInt32(args[1]);
-                NewNumberSystem number = new NewNumberSystem(decimalnumber, system);
+                NewNumberSysteminterpreter number = new NewNumberSysteminterpreter(decimalnumber, system);
                 string answer = number.calculatenewsystem();
                 answer = number.ReverseAnswer(answer);
                 Console.WriteLine(answer);

@@ -1,16 +1,15 @@
 ﻿using System.Text;
-
 namespace task_DEV_3
 {    /// <summary> 
      /// NewNumberSystem
      /// creates a string that is a translation of a number into another number system
      /// </summary>
-    class NewNumberSystem
+    class NewNumberSysteminterpreter
     {
         private int number;
         private int numbersystem;
 
-        public NewNumberSystem(int decimalnumber,int system)
+        public NewNumberSysteminterpreter(int decimalnumber,int system)
         {
             this.number = decimalnumber;
             this.numbersystem =system;
