@@ -4,12 +4,12 @@ namespace task_DEV_3
 {
     class ArgumentsCheck
     {
-        private int thebasisofanewnumbersystem;
-        private int decimalnumber;
-        public ArgumentsCheck(int x,int y)
+        private string thebasisofanewnumbersystem;
+        private string decimalnumber;
+        public ArgumentsCheck(string[]args)
         {
-            this.decimalnumber = x;
-            this.thebasisofanewnumbersystem = y;
+            this.decimalnumber = args[0];
+            this.thebasisofanewnumbersystem = args[1];
 
         }
         /// <summary> 
@@ -18,12 +18,22 @@ namespace task_DEV_3
         /// <returns>Is it allowed to continue the program</returns>
         public Boolean validationcheck()
         {
-            if ((0 == decimalnumber) || (0 == thebasisofanewnumbersystem))
+            if ((decimalnumber == string.Empty) || (string.Empty == thebasisofanewnumbersystem))
             {
-                Console.WriteLine("no transfer parameters");
+                Console.WriteLine("string empty");
                 return false;
             }
-            if ((thebasisofanewnumbersystem < 1) || (thebasisofanewnumbersystem > 20))
+            try
+            {
+                int FirstArgyment = Int32.Parse(decimalnumber);
+                int SecondArgyment = Int32.Parse(thebasisofanewnumbersystem);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Can not convert arguments to an integer type");
+                return false;
+            }           
+                if ((Convert.ToInt32(thebasisofanewnumbersystem) < 1) || (Convert.ToInt32(thebasisofanewnumbersystem) > 20))
             {
                 Console.WriteLine("you have entered the wrong basis of the new system");
                 return false;

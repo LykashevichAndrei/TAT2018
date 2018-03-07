@@ -12,12 +12,13 @@ namespace task_DEV_3
     {
         static void Main(string[] args)
         {
-            int decimalnumber = Convert.ToInt32(args[0]);
-            int system = Convert.ToInt32(args[1]);
-            ArgumentsCheck test = new ArgumentsCheck(decimalnumber,system);
+            ArgumentsCheck test = new ArgumentsCheck(args);
             Boolean check = test.validationcheck();
+            
             if (true == check)
-            { 
+            {
+                int decimalnumber = Convert.ToInt32(args[0]);
+                int system = Convert.ToInt32(args[1]);
                 NewNumberSystem number = new NewNumberSystem(decimalnumber, system);
                 string answer = number.calculatenewsystem();
                 answer = number.ReverseAnswer(answer);
