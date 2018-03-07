@@ -13,7 +13,6 @@ namespace task_DEV_3
         {
             ArgumentsCheck test = new ArgumentsCheck(args);
             Boolean check = test.validate();
-            
             if (true == check)
             {
                 int decimalnumber = Convert.ToInt32(args[0]);

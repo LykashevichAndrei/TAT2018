@@ -19,7 +19,7 @@ namespace task_DEV_3
         /// <returns>Is it allowed to continue the program</returns>
         public Boolean validate()
         {
-            if ((decimalnumber == string.Empty) || (string.Empty == thebasisofanewnumbersystem))
+            if ((string.Empty == decimalnumber) || (string.Empty == thebasisofanewnumbersystem)) 
             {
                 Console.WriteLine("string empty");
                 return false;
@@ -41,8 +41,7 @@ namespace task_DEV_3
                 Console.WriteLine("you have entered the wrong basis of the new system");
                 return false;
             }
-
-            return true;
+                return true;
         }
     }
 }
