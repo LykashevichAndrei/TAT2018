@@ -12,25 +12,23 @@ namespace task_DEV_2
 
         public EvenElementsOfTheString(string NewString) //constructor
         {
-           this.enteredstring = NewString;
+            this.enteredstring = NewString;
         }
 
         public string FindingEvenElemenstInString() //this function returns string with even elements
         {
-            try
+            if (enteredstring == string.Empty)
             {
-                StringBuilder newstr = new StringBuilder("");
-                for (int i = 0; i < enteredstring.Length; i += 2)
-                {
-                    newstr.Append(enteredstring[i]);
-                }
-                return newstr.ToString();
+                throw new ArgumentException();
             }
-            catch(ArgumentNullException)
+            StringBuilder newstr = new StringBuilder("");
+            for (int i = 0; i < enteredstring.Length; i += 2)
             {
-                Console.WriteLine("the string does not contain any characters");
-                return string.Empty;
+                newstr.Append(enteredstring[i]);
             }
+            return newstr.ToString();
+
+
         }
     }
 
