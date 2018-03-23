@@ -9,21 +9,22 @@ namespace Task_DEV_6
     class CountTypes : ICalculate
     {
         private List<Product> MyList;
-            public CountTypes(List<Product> products)
+        public CountTypes(List<Product> products)
         {
             this.MyList = products;
         }
         /// <summary>
         /// counting the number of product types
         /// </summary>
-        public void Calculate()
+        public double Calculate()
         {
-            int numberoftypes=0;
+            int numberoftypes = 0;
             foreach (Product element in MyList)
             {
-                        numberoftypes++;
+                numberoftypes++;
             }
-            Console.WriteLine(numberoftypes/4);
+            
+            return (numberoftypes / 4);
         }
     }
 }

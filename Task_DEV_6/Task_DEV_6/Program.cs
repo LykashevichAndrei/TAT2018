@@ -9,7 +9,6 @@ namespace Task_DEV_6
         {
             menu Menu = new menu();
             Menu.MainMenu();
-            Console.ReadLine();
         }
     }
 }

@@ -16,16 +16,16 @@ namespace Task_DEV_6
         /// <summary>
         /// counts the value of one type
         /// </summary>
-        public void Calculate()
+        public double Calculate()
         {
-            int counter=0;
-            double value=0;
+            int counter = 0;
+            double value = 0;
             foreach (Product element in MyList)
             {
-                value = (element.GetPrice * element.GetQuantity);
-                counter++;
+                value += (element.GetPrice * element.GetQuantity);
+                counter += element.GetQuantity;
             }
-            Console.WriteLine(value / counter);
+            return (value / counter);
         }
     }
 }

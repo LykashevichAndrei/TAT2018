@@ -16,14 +16,14 @@ namespace Task_DEV_6
         /// <summary>
         /// counting the number of products
         /// </summary>
-        public void Calculate()
+        public double Calculate()
         {
-            int quantityofgoods=0;
+            int quantityofgoods = 0;
             foreach (Product element in MyList)
             {
-                        quantityofgoods+= element.GetQuantity;
+                quantityofgoods += element.GetQuantity;
             }
-            Console.WriteLine(quantityofgoods);
+            return quantityofgoods;
         }
     }
 }
