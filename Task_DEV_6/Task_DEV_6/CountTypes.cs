@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Task_DEV_6
 {
@@ -19,12 +20,13 @@ namespace Task_DEV_6
         public double Calculate()
         {
             int numberoftypes = 0;
-            foreach (Product element in MyList)
+            List<Product> uniq = new List<Product>();
+           uniq.AddRange(MyList.Distinct());
+            foreach (Product element in uniq)
             {
                 numberoftypes++;
             }
-            
-            return (numberoftypes / 4);
+            return (numberoftypes);
         }
     }
 }
