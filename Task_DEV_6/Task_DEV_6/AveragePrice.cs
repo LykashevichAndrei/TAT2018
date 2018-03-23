@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Task_DEV_6
 {
     /// <summary>
     /// class that counts the value of one type
     /// </summary>
-    class AveragePrice : ICalculate
+    public class AveragePrice : ICalculate
     {
         private List<Product> MyList;
         public AveragePrice(List<Product> products)

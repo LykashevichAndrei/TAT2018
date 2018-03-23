@@ -6,7 +6,7 @@ namespace Task_DEV_6
     /// <summary>
     /// class that counts the value of all goods
     /// </summary>
-    class AveragePriceWithType : ICalculate
+    public class AveragePriceWithType : ICalculate
     {
         private List<Product> MyList;
         public AveragePriceWithType(List<Product> products)
@@ -25,8 +25,8 @@ namespace Task_DEV_6
             {
                 if (MyType.Equals(element.Gettype))
                 {
-                    value += (element.GetPrice* element.GetQuantity);
-                    counter+= element.GetQuantity;
+                    value += (element.GetPrice * element.GetQuantity);
+                    counter += element.GetQuantity;
                 }
             }
             return (value / counter);

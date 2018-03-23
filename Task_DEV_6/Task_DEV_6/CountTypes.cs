@@ -7,7 +7,7 @@ namespace Task_DEV_6
     /// <summary>
     /// class counting the number of product types
     /// </summary>
-    class CountTypes : ICalculate
+    public class CountTypes : ICalculate
     {
         private List<Product> MyList;
         public CountTypes(List<Product> products)
@@ -21,7 +21,7 @@ namespace Task_DEV_6
         {
             int numberoftypes = 0;
             List<Product> uniq = new List<Product>();
-           uniq.AddRange(MyList.Distinct());
+            uniq.AddRange(MyList.Distinct());
             foreach (Product element in uniq)
             {
                 numberoftypes++;

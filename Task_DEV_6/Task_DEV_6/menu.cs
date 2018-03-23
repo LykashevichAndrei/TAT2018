@@ -49,7 +49,7 @@ namespace Task_DEV_6
                     {
                         double temp;
                         CountTypes CP = new CountTypes(products);
-                        temp=CP.Calculate();
+                        temp = CP.Calculate();
                         Console.WriteLine(temp);
                     }
                     break;

@@ -7,12 +7,18 @@ namespace Task_DEV_6
     /// <sumary>
     /// Class describing the product
     /// </sumary>
-    class Product
+    public class Product
     {
         string type;
         string name;
         int quantity;
         double price;
+
+        public void Add(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
         public Product()
         {
             Console.WriteLine("Enter the type");
@@ -23,6 +29,13 @@ namespace Task_DEV_6
             this.quantity = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the price");
             this.price = Converter(Console.ReadLine());
+        }
+        public Product(string type, string name, int quantity, double price)
+        {
+            this.type = type;
+            this.name = name;
+            this.quantity = quantity;
+            this.price = price;
         }
         private double Converter(string InputString)
         {
