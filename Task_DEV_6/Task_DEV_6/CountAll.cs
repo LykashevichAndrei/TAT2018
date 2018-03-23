@@ -6,7 +6,7 @@ namespace Task_DEV_6
     /// <summary>
     /// class counting the number of products
     /// </summary>
-    class CountAll : ICalculate
+    public class CountAll : ICalculate
     {
         private List<Product> MyList;
         public CountAll(List<Product> products)
