@@ -7,16 +7,16 @@ namespace Task_DEV_7
 {
     class TeslaCar : ICar
     {
-        string mark { get; set; }
-        string model { get; set; }
-        string bodytype { get; set; }
-        string transmissiontype { get; set; }
-        string enginetype { get; set; }
-        double amount { get; set; }
-        int power { get; set; }
-        string climate { get; set; }
-        string carinterior { get; set; }
-        string quantity { get; set; }
+        public string mark { get; set; }
+        public string model { get; set; }
+        public string bodytype { get; set; }
+        public string transmissiontype { get; set; }
+        public string enginetype { get; set; }
+        public double amount { get; set; }
+        public int power { get; set; }
+        public string climate { get; set; }
+        public string carinterior { get; set; }
+        public string quantity { get; set; }
 
         public TeslaCar(string Model, string BodyType, string TransmissionType, string EngyneType, double Amount, int Power, string Climate , string CarInterior)
         {
