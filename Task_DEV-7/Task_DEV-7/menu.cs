@@ -22,9 +22,9 @@ namespace Task_DEV_7
             data.ForEach(player =>
             {
                 if(parseJSON.get.mark=="Tesla")
-                CarCatalog.Add(new TeslaCar(parseJSON.model, parseJSON.bodytype, parseJSON.transmissiontype, parseJSON.enginetype, parseJSON.amount, parseJSON.power, parseJSON.climate, parseJSON.carinterior));
+                CarCatalog.Add(new TeslaCarCreate(parseJSON.model, parseJSON.bodytype, parseJSON.transmissiontype, parseJSON.enginetype, parseJSON.amount, parseJSON.power, parseJSON.climate, parseJSON.carinterior));
                 if (data.parseJSON.mark == "Opel")
-                    CarCatalog.Add(new OpelCar(parseJSON.model, parseJSON.bodytype, parseJSON.transmissiontype, parseJSON.enginetype, parseJSON.amount, parseJSON.power, parseJSON.climate, parseJSON.carinterior));
+                    CarCatalog.Add(new OpelCarCreate(parseJSON.model, parseJSON.bodytype, parseJSON.transmissiontype, parseJSON.enginetype, parseJSON.amount, parseJSON.power, parseJSON.climate, parseJSON.carinterior));
             });
         }
     }
