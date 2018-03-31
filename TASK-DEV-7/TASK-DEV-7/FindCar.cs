@@ -37,6 +37,7 @@ namespace TASK_DEV_7
             {
                 Console.Write(i+"-");
                 Console.WriteLine(elements);
+                i++;
             }
 
             if(result != null)

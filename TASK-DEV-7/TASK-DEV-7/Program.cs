@@ -5,6 +5,9 @@ using System.Text;
 
 namespace TASK_DEV_7
 {
+    /// <summary>
+    /// entery point
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -13,10 +16,14 @@ namespace TASK_DEV_7
 
             EnteredCar enteredCar = new EnteredCar();
             List<Car> carcatalog = new List<Car>();
-            JSONDeserialize catalog = new JSONDeserialize(@args[0]);
+            JSONDeserialize catalog = new JSONDeserialize(args[0]);
             carcatalog=catalog.Deserialize();
+            foreach (Car elements in carcatalog)
+            {
+                Console.WriteLine(elements);
+            }
             List<Car> stockcatalog = new List<Car>();
-            JSONDeserialize carsinstock = new JSONDeserialize(@args[1]);
+            JSONDeserialize carsinstock = new JSONDeserialize(args[1]);
             stockcatalog = carsinstock.Deserialize();
             FindCar FK = new FindCar(stockcatalog,enteredCar);
             int stockavailability;

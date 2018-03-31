@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cars\BMW.cs" />
-    <Compile Include="Car.cs" />
+    <Compile Include="cars\Car.cs" />
     <Compile Include="cars\EnteredCar.cs" />
     <Compile Include="creators\BMWCreator.cs" />
     <Compile Include="creators\OpelCreator.cs" />

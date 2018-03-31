@@ -23,7 +23,7 @@ namespace TASK_DEV_7
         /// <returns></returns>
         public List<Car> Deserialize()
         {
-            string jsontostring = File.ReadAllText(@way);
+            string jsontostring = File.ReadAllText(way);
             List<Car> result = new List<Car>();
             int n = FindTheNumberOfElementsInJSON(jsontostring);
             StringBuilder[] objects=new StringBuilder[n];
