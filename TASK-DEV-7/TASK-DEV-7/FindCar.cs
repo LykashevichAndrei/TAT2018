@@ -21,20 +21,26 @@ namespace TASK_DEV_7
                 Console.WriteLine("Catalog or your entered car is empty");
             }
         }
-        public bool Find()
+        public int Find()
         {
            var result = from el in catalog
                                       where (el.bodytype == enteredCar.bodytype || el.bodytype == string.Empty) && (el.transmissiontype == enteredCar.transmissiontype || el.transmissiontype == string.Empty) && (el.enginetype == enteredCar.enginetype || el.enginetype == string.Empty) &&
                                       (el.amount == enteredCar.amount || el.amount == 0) && (el.power == enteredCar.power || el.power == 0) && (el.climate == enteredCar.climate || el.climate == string.Empty) && (el.carinterior == enteredCar.carinterior || el.carinterior == string.Empty)
                                       select el;
-            Console.WriteLine(result);     
+            int i = 0;
+            foreach(Car elements in result)
+            {
+                Console.Write(i+"-");
+                Console.WriteLine(elements);
+            }
+
             if(result != null)
             {
-                return true;
+                return 0;
             }
             else
             {
-                return false;
+                return i;
             }
         }
     }
