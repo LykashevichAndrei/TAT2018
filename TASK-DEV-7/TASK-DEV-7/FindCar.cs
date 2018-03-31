@@ -5,6 +5,9 @@ using System.Text;
 
 namespace TASK_DEV_7
 {
+    /// <summary>
+    /// Class To Find Car to buy
+    /// </summary>
     class FindCar
     {
         List<Car> catalog;
@@ -21,6 +24,10 @@ namespace TASK_DEV_7
                 Console.WriteLine("Catalog or your entered car is empty");
             }
         }
+        /// <summary>
+        /// method that find suitable car
+        /// </summary>
+        /// <returns>number of suitable car in our list</returns>
         public int Find()
         {
            var result = from el in catalog

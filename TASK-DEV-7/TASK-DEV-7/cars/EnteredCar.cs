@@ -5,6 +5,9 @@ using System.Text;
 
 namespace TASK_DEV_7
 {
+    /// <summary>
+    /// class of car we want to buy
+    /// </summary>
     class EnteredCar :Car
     {
         public EnteredCar()

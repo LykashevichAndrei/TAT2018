@@ -5,6 +5,9 @@ using System.Text;
 
 namespace TASK_DEV_7
 {
+    /// <summary>
+    /// tesla Car
+    /// </summary>
     class Tesla:Car
     {
        public Tesla(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, string Amount, string Power, string Climate, string Carinterior)

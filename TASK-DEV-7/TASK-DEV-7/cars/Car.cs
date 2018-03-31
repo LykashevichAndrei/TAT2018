@@ -5,6 +5,9 @@ using System.Text;
 
 namespace TASK_DEV_7
 {
+    /// <summary>
+    /// Abstract class of cars
+    /// </summary>
     abstract class Car : Object
     {
         public string mark { get; set; }

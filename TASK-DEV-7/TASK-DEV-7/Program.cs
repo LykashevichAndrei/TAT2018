@@ -35,18 +35,18 @@ namespace TASK_DEV_7
                 catalogavailability = FC.Find();
                 if(catalogavailability==0)
                 {
-                    Console.WriteLine("Bratan takim ne barijim");
+                    Console.WriteLine("there is no such car in the catalog");
                 }
                 else
                 {
-                    Console.WriteLine("scha podgonim starichek");
+                    Console.WriteLine("the order went to the warehouse");
                     JSONSerialize serialize = new JSONSerialize();
                     serialize.Serialize(carcatalog[catalogavailability],stockcatalog);
                 }
             }
             if(stockavailability !=0)
             {
-                Console.WriteLine("scha dostavim bratan tachka est' na sklade");
+                Console.WriteLine("car is in stock");
                 stockcatalog[stockavailability].quantity -= 1;
             }
             Console.ReadLine();
