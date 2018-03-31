@@ -12,8 +12,8 @@ namespace TASK_DEV_7
         public string bodytype { get; set; }
         public string transmissiontype { get; set; }
         public string enginetype { get; set; }
-        public double amount { get; set; }
-        public double power { get; set; }
+        public string amount { get; set; }
+        public string power { get; set; }
         public string climate { get; set; }
         public string carinterior { get; set; }
         public int quantity { get; set; }

@@ -7,7 +7,7 @@ namespace TASK_DEV_7
 {
     class BMW:Car
     {
-        public BMW(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, double Amount, double Power, string Climate, string Carinterior)
+        public BMW(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, string Amount, string Power, string Climate, string Carinterior)
         {
             model = Model;
             mark = Mark;

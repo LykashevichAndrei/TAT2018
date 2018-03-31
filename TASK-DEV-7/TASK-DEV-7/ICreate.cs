@@ -7,6 +7,6 @@ namespace TASK_DEV_7
 {
     interface ICreate
     {
-        Car Create(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, double Amount, double Power, string Climate, string Carinterior);
+        Car Create(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, string Amount, string Power, string Climate, string Carinterior);
     }
 }

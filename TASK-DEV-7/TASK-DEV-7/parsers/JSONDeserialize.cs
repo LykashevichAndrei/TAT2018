@@ -23,7 +23,7 @@ namespace TASK_DEV_7
         /// <returns></returns>
         public List<Car> Deserialize()
         {
-            string jsontostring = File.ReadAllText(way);
+            string jsontostring = File.ReadAllText(@way);
             List<Car> result = new List<Car>();
             int n = FindTheNumberOfElementsInJSON(jsontostring);
             StringBuilder[] objects=new StringBuilder[n];
@@ -41,15 +41,16 @@ namespace TASK_DEV_7
                 { 
                 case"Tesla":
                         TeslaCreator tesla = new TeslaCreator();
-                        tesla.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior);
+                        
+                        result.Add(tesla.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior));
                         break;
                 case "BMW":
                         BMWCreator bmw = new BMWCreator();
-                        bmw.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior);
-                break;
+                        result.Add(bmw.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior));
+                        break;
                 case "Opel":
                         OpelCreator opel = new OpelCreator();
-                        opel.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior);
+                        result.Add(opel.Create(m.mark, m.model, m.bodytype, m.transmissiontype, m.enginetype, m.amount, m.power, m.climate, m.carinterior));
                         break;
                 }
             }
