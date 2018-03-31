@@ -8,7 +8,7 @@ namespace TASK_DEV_7
     /// <summary>
     /// Class To Find Car to buy
     /// </summary>
-    class FindCar
+   public class FindCar
     {
         List<Car> catalog;
         EnteredCar enteredCar;
