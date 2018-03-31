@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TASK_DEV_7.creators
+﻿namespace TASK_DEV_7.creators
 {
     /// <summary>
     /// Create new Tesla car

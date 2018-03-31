@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TASK_DEV_7
 {
@@ -17,7 +15,7 @@ namespace TASK_DEV_7
             EnteredCar enteredCar = new EnteredCar();
             List<Car> carcatalog = new List<Car>();
             JSONDeserialize catalog = new JSONDeserialize(args[0]);
-            carcatalog=catalog.Deserialize();
+            carcatalog = catalog.Deserialize();
             foreach (Car elements in carcatalog)
             {
                 Console.WriteLine(elements);
@@ -25,15 +23,15 @@ namespace TASK_DEV_7
             List<Car> stockcatalog = new List<Car>();
             JSONDeserialize carsinstock = new JSONDeserialize(args[1]);
             stockcatalog = carsinstock.Deserialize();
-            FindCar FK = new FindCar(stockcatalog,enteredCar);
+            FindCar FK = new FindCar(stockcatalog, enteredCar);
             int stockavailability;
-            stockavailability= FK.Find();
-            if(stockavailability==0)
+            stockavailability = FK.Find();
+            if (stockavailability == 0)
             {
                 int catalogavailability = 0;
                 FindCar FC = new FindCar(carcatalog, enteredCar);
                 catalogavailability = FC.Find();
-                if(catalogavailability==0)
+                if (catalogavailability == 0)
                 {
                     Console.WriteLine("there is no such car in the catalog");
                 }
@@ -41,10 +39,10 @@ namespace TASK_DEV_7
                 {
                     Console.WriteLine("the order went to the warehouse");
                     JSONSerialize serialize = new JSONSerialize();
-                    serialize.Serialize(carcatalog[catalogavailability],stockcatalog);
+                    serialize.Serialize(carcatalog[catalogavailability], stockcatalog);
                 }
             }
-            if(stockavailability !=0)
+            if (stockavailability != 0)
             {
                 Console.WriteLine("car is in stock");
                 stockcatalog[stockavailability].quantity -= 1;

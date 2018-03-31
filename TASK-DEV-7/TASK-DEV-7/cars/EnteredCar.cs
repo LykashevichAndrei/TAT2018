@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TASK_DEV_7
 {
     /// <summary>
     /// class of car we want to buy
     /// </summary>
-    public class EnteredCar :Car
+    public class EnteredCar : Car
     {
         public EnteredCar()
         {
@@ -17,9 +14,9 @@ namespace TASK_DEV_7
             Console.WriteLine("Enter model");
             model = Console.ReadLine();
             Console.WriteLine("Type of car body");
-            bodytype= Console.ReadLine();
+            bodytype = Console.ReadLine();
             Console.WriteLine("Transmission Type");
-            transmissiontype= Console.ReadLine();
+            transmissiontype = Console.ReadLine();
             Console.WriteLine("Engin Type");
             enginetype = Console.ReadLine();
             Console.WriteLine("Amount");

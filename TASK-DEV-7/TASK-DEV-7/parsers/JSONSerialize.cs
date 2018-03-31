@@ -14,11 +14,11 @@ namespace TASK_DEV_7
         /// </summary>
         /// <param name="addcar">Car We Want to add to File</param>
         /// <param name="Addhere">List With Cars</param>
-        public void Serialize(Car addcar,List<Car> Addhere)
+        public void Serialize(Car addcar, List<Car> Addhere)
         {
             StringBuilder stock = new StringBuilder();
             stock.Append(JsonConvert.SerializeObject(addcar));
-            foreach(Car elements in Addhere)
+            foreach (Car elements in Addhere)
             {
                 stock.Append(JsonConvert.SerializeObject(elements));
             }

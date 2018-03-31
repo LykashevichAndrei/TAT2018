@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TASK_DEV_7
+﻿namespace TASK_DEV_7
 {
     /// <summary>
     /// Opel Car
     /// </summary>
-    class Opel:Car
+    class Opel : Car
     {
         public Opel(string Mark, string Model, string Bodytype, string Transmissiontype, string Enginetype, string Amount, string Power, string Climate, string Carinterior)
         {

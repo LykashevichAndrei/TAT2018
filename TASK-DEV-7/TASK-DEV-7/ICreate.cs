@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TASK_DEV_7
+﻿namespace TASK_DEV_7
 {
     public interface ICreate
     {

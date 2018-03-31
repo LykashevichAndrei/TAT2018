@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
 
 namespace TASK_DEV_7
-      {/// <summary>
-       /// Class deserializing JSON File
-       /// </summary>
-     public class JSONDeserialize
+{
+    /// <summary>
+    /// Class deserializing JSON File
+    /// </summary>
+    public class JSONDeserialize
     {
         private string way;
         public JSONDeserialize(string Way)
