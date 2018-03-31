@@ -8,7 +8,7 @@ namespace TASK_DEV_7.creators
     /// <summary>
     /// Class Create new object of BMW car
     /// </summary>
-    class BMWCreator:ICreate
+    public class BMWCreator:ICreate
     {
         /// <summary>
         /// Create new BMW car

@@ -1,17 +1,14 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Json;
-using System.Linq;
-using System.Text;
-using TASK_DEV_7.creators;
+using System.Runtime.Serialization;
 
 namespace TASK_DEV_7
       {/// <summary>
        /// Class deserializing JSON File
        /// </summary>
-    class JSONDeserialize
+     public class JSONDeserialize
     {
         private string way;
         public JSONDeserialize(string Way)
@@ -24,7 +21,6 @@ namespace TASK_DEV_7
         /// <returns>List Cars</returns>
         public List<Car> Deserialize()
         {
-            
             using (FileStream stream = File.OpenRead(way))
             {
                 List<Type> types = new List<Type>();

@@ -43,6 +43,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\TASK-DEV-7\TASK-DEV-7.csproj">
       <Project>{1e78b4ba-325d-46c1-b709-cb29584b1245}</Project>
       <Name>TASK-DEV-7</Name>
