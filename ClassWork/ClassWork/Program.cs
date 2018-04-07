@@ -9,6 +9,16 @@ namespace ClassWork
     {
         static void Main(string[] args)
         {
+            Car[] Cars = new Car[3];
+            Cars[0] = new Car("agila", "Opel");
+            Cars[1] = new Car("T1", "Tesla");
+            Cars[2] = new Car("polo", "VW");
+            AutoHouse CarList = new AutoHouse(Cars);
+            foreach(Car el in CarList)
+            {
+                Console.WriteLine(el.company + " " + el.model);
+            }
+            Console.ReadLine();
         }
     }
 }
