@@ -8,10 +8,11 @@ namespace ClassWork
         public AutoHouse(Car[] carlist)
         {
             car = new Car[carlist.Length];
-            for(int i=0;i<carlist.Length;i++)
+            for (int i = 0; i < carlist.Length; i++)
             {
                 car[i] = carlist[i];
             }
+
         }
         IEnumerator IEnumerable.GetEnumerator()
         {
@@ -19,7 +20,17 @@ namespace ClassWork
         }
         public carEnumerator GetEnumerator()
         {
-            return new carEnumerator(car);
+            {
+                new modelEnumerator(car);
+                return new carEnumerator(car); ;
+            }
         }
     }
+
 }
+
+
+
+
+
+

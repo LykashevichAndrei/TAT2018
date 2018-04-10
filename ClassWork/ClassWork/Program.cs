@@ -14,10 +14,13 @@ namespace ClassWork
             Cars[1] = new Car("T1", "Tesla");
             Cars[2] = new Car("polo", "VW");
             AutoHouse CarList = new AutoHouse(Cars);
-            foreach(Car el in CarList)
+            Console.WriteLine("ALL Cars");
+            foreach (Car el in CarList)
             {
                 Console.WriteLine(el.company + " " + el.model);
             }
+            Console.WriteLine("UNIQUE Cars");
+
             Console.ReadLine();
         }
     }

@@ -2,16 +2,17 @@
 
 namespace ClassWork
 {
-    class modelEnumerator : IEnumerator
+    class UniqueModelsEnumerator :IEnumerator
     {
         Car[] car;
-        int position = 0;
-        public modelEnumerator(Car[] list)
+        int position = -1;
+        public UniqueModelsEnumerator(Car[] list)
         {
             car = list;
         }
         public bool MoveNext()
         {
+
             position++;
             return (position < car.Length);
         }
@@ -26,11 +27,11 @@ namespace ClassWork
                 return Current;
             }
         }
-        public string Current
+        public Car Current
         {
             get
             {
-                return car[position].model;
+                return car[position];
             }
         }
     }
