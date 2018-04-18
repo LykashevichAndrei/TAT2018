@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Task_DEV_8
 {
-    class User
+    public class User
     {
         public string FirstName;
         public string LastName;

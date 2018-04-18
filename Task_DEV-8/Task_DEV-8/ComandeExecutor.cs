@@ -6,7 +6,7 @@ using System.Xml.Linq;
 
 namespace Task_DEV_8
 {
-    class ComandeExecutor
+    public class ComandeExecutor
     {
         public double AverageAge(List<User> users)
         {
