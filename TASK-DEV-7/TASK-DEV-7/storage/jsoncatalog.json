@@ -1,0 +1,167 @@
+﻿[
+  {
+    "mark": "Opel",
+    "model": "Agila",
+    "bodytype": "Sedan",
+    "transmissiontype": "Manual",
+    "enginetype": "petrol",
+    "amount": 0.9,
+    "power": 20,
+    "climate": "",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "D11",
+    "bodytype": "StationWagon",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 0,
+    "power": 210,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Opel",
+    "model": "Insignia",
+    "bodytype": "minivan",
+    "transmissiontype": "Automatic",
+    "enginetype": "diesel",
+    "amount": 3.2,
+    "power": 180,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Opel",
+    "model": "Insignia",
+    "bodytype": "StationWagon",
+    "transmissiontype": "Automatic",
+    "enginetype": "petrol",
+    "amount": 5.5,
+    "power": 230,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "s3",
+    "bodytype": "Sedan",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 0,
+    "power": 200,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Opel",
+    "model": "Corsa",
+    "bodytype": "minivan",
+    "transmissiontype": "Automatic",
+    "enginetype": "petrol",
+    "amount": 1.6,
+    "power": 110,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Opel",
+    "model": "Zafira",
+    "bodytype": "StationWagon",
+    "transmissiontype": "Manual",
+    "enginetype": "diesel",
+    "amount": 2.2,
+    "power": 120,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "BMW",
+    "model": "X5",
+    "bodytype": "Sedan",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 5.5,
+    "power": 240,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "BMW",
+    "model": "4",
+    "bodytype": "Sedan",
+    "transmissiontype": "Automatic",
+    "enginetype": "petrol",
+    "amount": 5.0,
+    "power": 420,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "D3",
+    "bodytype": "StationWagon",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 0,
+    "power": 130,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "BMW",
+    "model": "5",
+    "bodytype": "minivan",
+    "transmissiontype": "Automatic",
+    "enginetype": "diesel",
+    "amount": 1.6,
+    "power": 118,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Opel",
+    "model": "Agila",
+    "bodytype": "compartment",
+    "transmissiontype": "Automatic",
+    "enginetype": "diesel",
+    "amount": 1.0,
+    "power": 220,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "A1",
+    "bodytype": "StationWagon",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 2.2,
+    "power": 80,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "TT",
+    "bodytype": "minivan",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 3.5,
+    "power": 112,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  },
+  {
+    "mark": "Tesla",
+    "model": "D1",
+    "bodytype": "compartment",
+    "transmissiontype": "Automatic",
+    "enginetype": "electro",
+    "amount": 0,
+    "power": 120,
+    "climate": "СlimateСontrol",
+    "carinterior": "leather"
+  }
+]
